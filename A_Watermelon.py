@@ -1,1 +1,2 @@
-print("YES" if int(input()) % 2 == 0 else "NO")
+num = int(input())
+print("YES" if num % 2 == 0 and num > 2 else "NO")
