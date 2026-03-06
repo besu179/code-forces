@@ -4,11 +4,11 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
 i = 0
-res = []
+ans = []
 
 for j in range(m):
     while i < n and a[i] < b[j]:
         i += 1
-    res.append(i)
+    ans.append(i)
 
-print(*res)
+print(*ans)
