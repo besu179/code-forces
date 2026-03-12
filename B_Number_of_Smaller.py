@@ -11,4 +11,8 @@ for j in range(len(b)):
         i += 1
     ans.append(i)
 
+<<<<<<< HEAD
 print(*ans)
+=======
+print(*ans)
+>>>>>>> 76b8af10fff94674c1f8b47e55e13fddd8132f7a

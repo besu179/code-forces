@@ -9,5 +9,5 @@ for r in range(len(a)):
     while curr_sum > t:
         curr_sum -= a[l]
         l += 1
-    ans = max(r - l + 1, 1)
+    ans = max(r - l + 1, ans)
 print(ans)
