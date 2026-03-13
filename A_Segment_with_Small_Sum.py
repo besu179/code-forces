@@ -1,17 +1,14 @@
 n, s = map(int, input().split())
 a = list(map(int, input().split()))
 
-l = 0
-curr_sum = 0
-max_len = 0
+max_len = cur_sum = l = 0
 
 for r in range(n):
-    curr_sum += a[r]
+    cur_sum += a[r]
     
-    while curr_sum > s:
-        curr_sum -= a[l]
+    while cur_sum > s:
+        cur_sum -= a[l]
         l += 1
-    
     max_len = max(max_len, r - l + 1)
-
+    
 print(max_len)
